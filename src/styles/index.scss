@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* weekend color */
+th.fc-day-sat .fc-col-header-cell-cushion {
+  @apply text-blue-500;
+}
+th.fc-day-sun .fc-col-header-cell-cushion {
+  @apply text-red-500;
+}
+td.fc-day-sat .fc-daygrid-day-number {
+  @apply text-blue-500;
+}
+td.fc-day-sun .fc-daygrid-day-number {
+  @apply text-red-500;
+}
+.fc-daygrid-day-number {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  width: 100%;
+}
+
+/* optional holiday color */
+.holiday-label {
+  @apply text-red-500;
+}
+.holiday-number {
+  @apply text-red-500;
+}
+
+/* toolbar */
+.fc-toolbar-chunk {
+  .fc-button {
+    @apply inline-flex items-center ring-0 border-none rounded-md bg-primary-500 px-3 py-2 text-sm font-semibold text-white hover:bg-primary-600;
+  }
+  .fc-button:disabled {
+    @apply bg-primary-400 cursor-auto;
+  }
+  .fc-button:not(:disabled):active {
+    @apply bg-primary-500;
+  }
+  .fc-button.fc-button-primary.fc-button-active {
+    @apply bg-primary-700;
+  }
+}
+
+/* event */
+.fc-event {
+  margin-bottom: 2px;
+}
+.fc-event.fc-daygrid-dot-event {
+  @apply bg-pink-500 border-pink-500 text-white align-middle;
+  padding: 2px 5px;
+}
+.fc-event.fc-daygrid-block-event {
+  @apply bg-green-600 border-green-600 align-middle;
+  padding: 2px 5px;
+}
