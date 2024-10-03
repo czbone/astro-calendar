@@ -73,11 +73,8 @@ export default function Calendar() {
         businessHours={true} // 土日をグレーアウト
         fixedWeekCount={false} // 週数を固定しない⇒月の週数が変わる
         height={'90vh'} // カレンダーの高さを制限
-
         // 日本語化
-        locales={[jaLocale]}
-        locale="ja"
-
+        locale={jaLocale}
         // イベントの表示形式
         eventDisplay={'block'} // イベントをブロック要素として表示
         eventTimeFormat={{

@@ -11,33 +11,33 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "@astrojs/node": "^8.3.3",
+    "@astrojs/node": "^8.3.4",
     "@astrojs/react": "^3.6.2",
-    "@astrojs/tailwind": "^5.1.0",
+    "@astrojs/tailwind": "^5.1.1",
     "@fullcalendar/core": "^6.1.15",
     "@fullcalendar/daygrid": "^6.1.15",
     "@fullcalendar/interaction": "^6.1.15",
     "@fullcalendar/react": "^6.1.15",
     "@fullcalendar/timegrid": "^6.1.15",
-    "astro": "^4.14.2",
+    "astro": "^4.15.10",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "tailwindcss": "^3.4.10",
-    "typescript": "^5.5.4"
+    "tailwindcss": "^3.4.13",
+    "typescript": "^5.6.2"
   },
   "devDependencies": {
-    "@eslint/js": "^9.9.0",
-    "@types/react": "^18.3.3",
+    "@eslint/js": "^9.11.1",
+    "@types/react": "^18.3.11",
     "@types/react-dom": "^18.3.0",
-    "@typescript-eslint/parser": "^8.1.0",
-    "astro-eslint-parser": "^1.0.2",
-    "eslint": "^9.9.0",
-    "eslint-plugin-astro": "^1.2.3",
-    "globals": "^15.9.0",
+    "@typescript-eslint/parser": "^8.8.0",
+    "astro-eslint-parser": "^1.0.3",
+    "eslint": "^9.11.1",
+    "eslint-plugin-astro": "^1.2.4",
+    "globals": "^15.10.0",
     "prettier": "^3.3.3",
     "prettier-plugin-astro": "^0.14.1",
-    "sass": "^1.77.8",
-    "typescript-eslint": "^8.1.0"
+    "sass": "^1.79.4",
+    "typescript-eslint": "^8.8.0"
   },
-  "packageManager": "pnpm@9.7.1+sha512.faf344af2d6ca65c4c5c8c2224ea77a81a5e8859cbc4e06b1511ddce2f0151512431dd19e6aff31f2c6a8f5f2aced9bd2273e1fed7dd4de1868984059d2c4247"
+  "packageManager": "pnpm@9.12.0"
 }
