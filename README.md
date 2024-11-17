@@ -29,3 +29,11 @@ pnpm start
 yarn build
 yarn start
 ```
+
+## Releted Projects
+
+- [astro-calendar-ex](https://github.com/czbone/astro-calendar-ex) - Event calendar system with database based on Astro
+
+## License
+
+[MIT](./LICENSE)
