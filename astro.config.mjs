@@ -15,5 +15,14 @@ export default defineConfig({
   adapter: node({
     mode: 'standalone'
   }),
-  server: { port: 3000, host: true /* ホスティング時必須 */ }
+  server: { port: 3000, host: true /* ホスティング時必須 */ },
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          api: 'modern-compiler'
+        }
+      }
+    }
+  }
 })
