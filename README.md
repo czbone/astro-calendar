@@ -13,10 +13,10 @@ A sample Astro project featuring the FullCalendar library (https://fullcalendar.
 
 ## Tech Stack
 
-- Astro v4.x
-- React v18.x
+- Astro v5.x
+- React v19.x
 - FullCalendar v6.x
-- Tailwind CSS v3.x
+- Tailwind CSS v4.x
 - TypeScript v5.x
 
 ## How to use
