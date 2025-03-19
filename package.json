@@ -19,7 +19,7 @@
     "@fullcalendar/react": "^6.1.15",
     "@fullcalendar/timegrid": "^6.1.15",
     "@tailwindcss/vite": "^4.0.14",
-    "astro": "^5.5.2",
+    "astro": "^5.5.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "tailwindcss": "^4.0.14",
@@ -27,7 +27,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.22.0",
-    "@types/react": "^19.0.10",
+    "@types/react": "^19.0.11",
     "@types/react-dom": "^19.0.4",
     "@typescript-eslint/parser": "^8.26.1",
     "astro-eslint-parser": "^1.2.1",
@@ -36,8 +36,8 @@
     "globals": "^16.0.0",
     "prettier": "^3.5.3",
     "prettier-plugin-astro": "^0.14.1",
-    "sass-embedded": "^1.85.1",
+    "sass-embedded": "^1.86.0",
     "typescript-eslint": "^8.26.1"
   },
-  "packageManager": "pnpm@10.6.3"
+  "packageManager": "pnpm@10.6.4"
 }
