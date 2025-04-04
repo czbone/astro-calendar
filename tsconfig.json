@@ -1,21 +1,26 @@
 {
   "extends": "astro/tsconfigs/strict",
+  "include": [".astro/types.d.ts", "**/*"],
+  "exclude": ["dist"],
   "compilerOptions": {
-    // base options
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "skipLibCheck": true,
-    "verbatimModuleSyntax": true,
-    "resolveJsonModule": true,
-    "moduleDetection": "force",
-    "jsx": "preserve",
-
     // strictness options
-    "strict": true,
     "strictNullChecks": true,
     "noUncheckedIndexedAccess": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "exactOptionalPropertyTypes": true,
 
-    // path aliases
+    // unused checks
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+
+    // module resolution
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "moduleDetection": "force",
+
+    // Path aliases
     "baseUrl": "./src",
     "paths": {
       "@/*": ["*"]
