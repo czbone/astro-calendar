@@ -36,6 +36,26 @@ export const INITIAL_EVENTS = [
   },
   {
     id: createEventId(),
+    title: 'ミーティング3',
+    start: day2Str + 'T14:00:00'
+  },
+  {
+    id: createEventId(),
+    title: 'ミーティング4',
+    start: day2Str + 'T15:00:00'
+  },
+  {
+    id: createEventId(),
+    title: 'ミーティング5',
+    start: day2Str + 'T16:00:00'
+  },
+  {
+    id: createEventId(),
+    title: 'ミーティング6',
+    start: day2Str + 'T17:00:00'
+  },
+  {
+    id: createEventId(),
     title: '旅行',
     start: day3Str,
     end: day5Str,
