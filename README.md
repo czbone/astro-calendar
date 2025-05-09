@@ -47,7 +47,6 @@ yarn start
 
 ## Related Projects
 
-- [astro-calendar-ex](https://github.com/czbone/astro-calendar-ex) - Event calendar system with database based on Astro
 - [ufcal](https://github.com/ufcal/ufcal) - Advanced calendar implementation with enhanced features and customization options
 
 ## License
