@@ -17,13 +17,11 @@
 
     // module resolution
     "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
     "moduleDetection": "force",
 
     // Path aliases
-    "baseUrl": "./src",
     "paths": {
-      "@/*": ["*"]
+      "@/*": ["./src/*"]
     }
   },
 }

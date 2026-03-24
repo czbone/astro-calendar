@@ -1,34 +1,35 @@
-import React, { useState, useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import FullCalendar from '@fullcalendar/react'
+import type { DayCellContentArg, EventInput } from '@fullcalendar/core'
 import dayGridPlugin from '@fullcalendar/daygrid'
 import jaLocale from '@fullcalendar/core/locales/ja'
 
-export default function Calendar() {
-  const [events, setEvents] = useState([])
-  const [holidays, setHolidays] = useState({})
+type HolidayMap = Record<string, string>
 
-  const fetchHolidays = async () => {
+export default function Calendar(): React.JSX.Element {
+  const [events, setEvents] = useState<EventInput[]>([])
+  const [holidays, setHolidays] = useState<HolidayMap>({})
+
+  const fetchHolidays = async (): Promise<void> => {
     try {
       const response = await fetch('/api/holiday')
       if (!response.ok) {
         throw new Error('Network response was not ok')
       }
-      const data = await response.json()
+      const data = (await response.json()) as HolidayMap
       setHolidays(data)
     } catch (error) {
       console.error('Error fetching holidays:', error)
     }
   }
 
-  const fetchEvents = async () => {
+  const fetchEvents = async (): Promise<void> => {
     try {
-      console.log('fetchEvents')
       const response = await fetch('/api/event')
       if (!response.ok) {
         throw new Error('Network response was not ok')
       }
-      const data = await response.json()
-      console.log(data)
+      const data = (await response.json()) as EventInput[]
       setEvents(data)
     } catch (error) {
       console.error('Error fetching events:', error)
@@ -42,7 +43,9 @@ export default function Calendar() {
   }, [])
 
   // 日付セルのレンダリング
-  const renderDayCellContent = (dayCellContent) => {
+  const renderDayCellContent = (
+    dayCellContent: DayCellContentArg
+  ): React.JSX.Element | undefined => {
     // 月ビュー以外は何もしない
     if (dayCellContent.view.type !== 'dayGridMonth') return
 

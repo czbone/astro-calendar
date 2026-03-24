@@ -1,41 +1,57 @@
 # Astro Calendar Example
 
-A sample Astro project featuring the FullCalendar library (https://fullcalendar.io/) with Tailwind CSS integration.
+An Astro calendar sample using [FullCalendar](https://fullcalendar.io/) with Tailwind CSS.
 
 ![Calendar Screenshot](https://github.com/user-attachments/assets/ad352e7d-3d34-4034-8a5f-21ca3eb21c8d)
 
 ## Features
 
-- Full-screen calendar display (day grid, Japanese locale)
+- Month calendar view with Japanese locale
 - Japanese holiday integration via [holidays-jp API](https://holidays-jp.github.io/)
-- Sample event management with REST API endpoints
-- Responsive design with Tailwind CSS
-- Server-side rendering (SSR) with Node.js adapter
+- Sample event API endpoints
+- Tailwind CSS based styling
+- SSR with the Node.js standalone adapter
 
 ## Tech Stack
 
-- Astro v6.x (SSR / Node.js standalone adapter)
+- Astro v6.x
 - React v19.x
 - FullCalendar v6.x
 - Tailwind CSS v4.x
-- TypeScript v5.x
+- TypeScript v6.x
 - ESLint / Prettier / Sass
 
-## How to use
+## Setup
 
-1. Install packages
+Install dependencies:
 
 ```bash
 pnpm install
 ```
 
-2. Online debug by **Development server** on **Run and Debug view** in VSCode
+Start the development server:
 
-3. Build and launch by command
+```bash
+pnpm dev
+```
+
+Build and start the production server:
 
 ```bash
 pnpm build
 pnpm start
+```
+
+Run lint:
+
+```bash
+pnpm lint
+```
+
+Format files:
+
+```bash
+pnpm format
 ```
 
 ## Related Projects

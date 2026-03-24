@@ -15,7 +15,9 @@ export const GET: APIRoute = async () => {
       }
     })
   } catch (error) {
-    return new Response(JSON.stringify({ error: error.message }), {
+    const message = error instanceof Error ? error.message : 'Unknown error'
+
+    return new Response(JSON.stringify({ error: message }), {
       status: 500,
       headers: {
         'Content-Type': 'application/json'
