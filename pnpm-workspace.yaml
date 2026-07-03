@@ -3,29 +3,22 @@ allowBuilds:
   esbuild: true
   sharp: true
 minimumReleaseAgeExclude:
-  - '@typescript-eslint/eslint-plugin@8.59.4'
-  - '@typescript-eslint/parser@8.59.4'
-  - '@typescript-eslint/project-service@8.59.4'
-  - '@typescript-eslint/scope-manager@8.59.4'
-  - '@typescript-eslint/tsconfig-utils@8.59.4'
-  - '@typescript-eslint/type-utils@8.59.4'
-  - '@typescript-eslint/types@8.59.4'
-  - '@typescript-eslint/typescript-estree@8.59.4'
-  - '@typescript-eslint/utils@8.59.4'
-  - '@typescript-eslint/visitor-keys@8.59.4'
-  - astro@6.3.5
-  - typescript-eslint@8.59.4
+  - '@typescript-eslint/eslint-plugin@8.59.4 || 8.60.1'
+  - '@typescript-eslint/parser@8.59.4 || 8.60.1'
+  - '@typescript-eslint/project-service@8.59.4 || 8.60.1'
+  - '@typescript-eslint/scope-manager@8.59.4 || 8.60.1'
+  - '@typescript-eslint/tsconfig-utils@8.59.4 || 8.60.1'
+  - '@typescript-eslint/type-utils@8.59.4 || 8.60.1'
+  - '@typescript-eslint/types@8.59.4 || 8.60.1'
+  - '@typescript-eslint/typescript-estree@8.59.4 || 8.60.1'
+  - '@typescript-eslint/utils@8.59.4 || 8.60.1'
+  - '@typescript-eslint/visitor-keys@8.59.4 || 8.60.1'
+  - astro@6.3.5 || 7.0.6
+  - typescript-eslint@8.59.4 || 8.60.1
   - '@types/react@19.2.16'
-  - '@typescript-eslint/eslint-plugin@8.60.1'
-  - '@typescript-eslint/parser@8.60.1'
-  - '@typescript-eslint/project-service@8.60.1'
-  - '@typescript-eslint/scope-manager@8.60.1'
-  - '@typescript-eslint/tsconfig-utils@8.60.1'
-  - '@typescript-eslint/type-utils@8.60.1'
-  - '@typescript-eslint/types@8.60.1'
-  - '@typescript-eslint/typescript-estree@8.60.1'
-  - '@typescript-eslint/utils@8.60.1'
-  - '@typescript-eslint/visitor-keys@8.60.1'
   - react-dom@19.2.7
   - react@19.2.7
-  - typescript-eslint@8.60.1
+  - '@astrojs/internal-helpers@0.10.1'
+  - '@astrojs/markdown-satteri@0.3.3'
+  - '@astrojs/node@11.0.2'
+  - '@astrojs/react@6.0.1'

@@ -14,12 +14,17 @@ An Astro calendar sample using [FullCalendar](https://fullcalendar.io/) with Tai
 
 ## Tech Stack
 
-- Astro v6.x
+- Astro v7.x
 - React v19.x
 - FullCalendar v6.x
 - Tailwind CSS v4.x
 - TypeScript v6.x
-- ESLint / Prettier / Sass
+- ESLint 10 / Prettier / Sass
+
+## Prerequisites
+
+- Node.js >= 22.12.0 (even-numbered versions only)
+- pnpm >= 11.9.0
 
 ## Setup
 
@@ -35,7 +40,14 @@ Start the development server:
 pnpm dev
 ```
 
-Build and start the production server:
+Build and preview the production output:
+
+```bash
+pnpm build
+pnpm preview
+```
+
+Start the production server (Node.js standalone adapter):
 
 ```bash
 pnpm build
