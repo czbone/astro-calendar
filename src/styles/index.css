@@ -8,10 +8,18 @@
   --text-base--line-height: 1.5;
   --text-sm: 0.875rem;
   --text-sm--line-height: 1.25;
+  --text-xl: 1.25rem;
+  --text-xl--line-height: 1.75;
+  --text-2xl: 2rem;
+  --text-2xl--line-height: 1.25;
 }
 
 body {
   @apply font-sans;
+}
+
+.calendar-root {
+  @apply mt-4;
 }
 
 /* Typography (via FullCalendar render hooks) */
@@ -21,6 +29,12 @@ body {
   font-family: var(--font-sans);
   font-size: var(--text-base);
   line-height: var(--text-base--line-height);
+}
+
+.calendar-root .calendar-title-font {
+  font-family: var(--font-sans);
+  font-size: var(--text-2xl);
+  line-height: var(--text-2xl--line-height);
 }
 
 .calendar-root .calendar-event-font,
@@ -36,6 +50,11 @@ body {
   justify-content: space-between;
   flex-direction: row-reverse;
   width: 100%;
+}
+
+/* Day-of-week header (via dayHeaderInnerClass) */
+.calendar-root .calendar-day-header {
+  font-weight: 700;
 }
 
 /* Weekend colors (via dayHeaderInnerClass / dayCellTopContent) */

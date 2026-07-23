@@ -11,9 +11,11 @@ import '@fullcalendar/react/themes/classic/palette.css'
 type HolidayMap = Record<string, string>
 
 const calendarFontClass = 'calendar-font'
+const calendarTitleFontClass = 'calendar-title-font'
 const calendarRootClass = 'calendar-root'
 const calendarEventFontClass = 'calendar-event-font'
 const calendarDayTopClass = 'calendar-day-top'
+const calendarDayHeaderClass = 'calendar-day-header'
 const calendarEventClass = 'calendar-event'
 const calendarEventInnerClass = 'calendar-event-inner'
 const calendarListEventDotHiddenClass = 'calendar-list-event-dot-hidden'
@@ -40,7 +42,7 @@ function getDayHeaderInnerClass(info: { date: Date; inPopover: boolean }): strin
   if (info.inPopover) {
     return joinClasses(calendarFontClass, calendarPopoverTitleClass)
   }
-  return joinClasses(calendarFontClass, getWeekendClass(info.date))
+  return joinClasses(calendarFontClass, calendarDayHeaderClass, getWeekendClass(info.date))
 }
 
 function getDayHeaderClass(info: { inPopover: boolean }): string {
@@ -116,10 +118,10 @@ export default function Calendar(): React.JSX.Element {
         className={calendarFontClass}
         plugins={[themePlugin, dayGridPlugin]}
         headerToolbar={{
-          start: '',
+          start: 'prev,next today',
           center: 'title'
         }}
-        toolbarTitleClass={calendarFontClass}
+        toolbarTitleClass={calendarTitleFontClass}
         dayHeaderClass={getDayHeaderClass}
         dayHeaderInnerClass={getDayHeaderInnerClass}
         dayCellClass={getDayCellClass}
