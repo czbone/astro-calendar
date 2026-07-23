@@ -16,15 +16,15 @@ An Astro calendar sample using [FullCalendar](https://fullcalendar.io/) with Tai
 
 - Astro v7.x
 - React v19.x
-- FullCalendar v6.x
+- FullCalendar v7.x (classic theme)
 - Tailwind CSS v4.x
-- TypeScript v6.x
+- TypeScript v7.x
 - ESLint 10 / Prettier / Sass
 
 ## Prerequisites
 
 - Node.js >= 22.12.0 (even-numbered versions only)
-- pnpm >= 11.9.0
+- pnpm >= 11.16.0
 
 ## Setup
 

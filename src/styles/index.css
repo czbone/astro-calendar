@@ -4,71 +4,78 @@
   --font-sans:
     'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', '游ゴシック',
     'Yu Gothic', 'ＭＳ Ｐゴシック', 'MS PGothic', 'sans-serif';
-
-  --color-primary-100: var(--color-indigo-100);
-  --color-primary-200: var(--color-indigo-200);
-  --color-primary-300: var(--color-indigo-300);
-  --color-primary-400: var(--color-indigo-400);
-  --color-primary-500: var(--color-indigo-500);
-  --color-primary-600: var(--color-indigo-600);
-  --color-primary-700: var(--color-indigo-700);
-  --color-primary-800: var(--color-indigo-800);
-  --color-primary-900: var(--color-indigo-900);
+  --text-base: 1rem;
+  --text-base--line-height: 1.5;
+  --text-sm: 0.875rem;
+  --text-sm--line-height: 1.25;
 }
 
-/* weekend color */
-th.fc-day-sat .fc-col-header-cell-cushion {
-  @apply text-blue-500;
+body {
+  @apply font-sans;
 }
-th.fc-day-sun .fc-col-header-cell-cushion {
-  @apply text-red-500;
+
+/* Typography (via FullCalendar render hooks) */
+.calendar-root .calendar-font,
+.calendar-popover-header .calendar-font,
+.calendar-popover-title {
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  line-height: var(--text-base--line-height);
 }
-td.fc-day-sat .fc-daygrid-day-number {
-  @apply text-blue-500;
+
+.calendar-root .calendar-event-font,
+.calendar-popover-body .calendar-event-font {
+  font-family: var(--font-sans);
+  font-size: var(--text-sm);
+  line-height: var(--text-sm--line-height);
 }
-td.fc-day-sun .fc-daygrid-day-number {
-  @apply text-red-500;
-}
-.fc-daygrid-day-number {
+
+/* Day cell top: day number + holiday label */
+.calendar-root .calendar-day-top {
   display: flex;
   justify-content: space-between;
   flex-direction: row-reverse;
   width: 100%;
 }
 
-/* optional holiday color */
-.holiday-label {
-  @apply text-red-500;
+/* Weekend colors (via dayHeaderInnerClass / dayCellTopContent) */
+.calendar-root .calendar-saturday {
+  @apply text-blue-500;
 }
-.holiday-number {
+
+.calendar-root .calendar-sunday {
   @apply text-red-500;
 }
 
-/* toolbar */
-.fc-toolbar-chunk {
-  .fc-button {
-    @apply inline-flex items-center ring-0 border-none rounded-md bg-primary-500 px-3 py-2 text-sm font-semibold text-white hover:bg-primary-600;
-  }
-  .fc-button:disabled {
-    @apply bg-primary-400 cursor-auto;
-  }
-  .fc-button:not(:disabled):active {
-    @apply bg-primary-500;
-  }
-  .fc-button.fc-button-primary.fc-button-active {
-    @apply bg-primary-700;
-  }
+/* Holiday text (via dayCellTopContent) */
+.calendar-root .holiday-text {
+  @apply text-base text-red-500;
 }
 
-/* event */
-.fc-event {
-  margin-bottom: 2px;
+/* Events (via rowEvent* / listItemEvent* render hooks) */
+.calendar-root .calendar-event,
+.calendar-popover-body .calendar-event {
+  margin-block: 2px;
 }
-.fc-event.fc-daygrid-dot-event {
-  @apply bg-pink-500 border-pink-500 text-white align-middle;
+
+.calendar-root .calendar-event-inner,
+.calendar-popover-body .calendar-event-inner {
   padding: 2px 5px;
 }
-.fc-event.fc-daygrid-block-event {
-  @apply bg-green-600 border-green-600 align-middle;
-  padding: 2px 5px;
+
+/* Popover (rendered outside .calendar-root) */
+.calendar-list-event-dot-hidden {
+  display: none;
+}
+
+.calendar-popover-header {
+  padding-block: 6px;
+}
+
+.calendar-popover-title {
+  font-weight: 700;
+}
+
+.calendar-popover-body {
+  padding: 6px;
 }
