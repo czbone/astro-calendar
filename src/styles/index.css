@@ -98,3 +98,12 @@ body {
 .calendar-popover-body {
   padding: 6px;
 }
+
+/*
+ * Day-cell events are absolutely stacked, so top+bottom margins both apply (2px+2px=4px).
+ * Popover events are in normal flow and margins collapse to 2px unless the parent is flex/grid.
+ */
+.calendar-popover-events {
+  display: flex;
+  flex-direction: column;
+}

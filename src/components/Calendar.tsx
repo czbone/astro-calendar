@@ -55,6 +55,11 @@ function getDayCellClass(info: { inPopover: boolean }): string {
   return info.inPopover ? calendarPopoverBodyClass : ''
 }
 
+function getDayCellInnerClass(info: { inPopover: boolean }): string {
+  // Prevent margin collapse between stacked events (matches day-cell harness spacing)
+  return info.inPopover ? 'calendar-popover-events' : ''
+}
+
 export default function Calendar(): React.JSX.Element {
   const [events, setEvents] = useState<EventInput[]>([])
   const [holidays, setHolidays] = useState<HolidayMap>({})
@@ -125,6 +130,7 @@ export default function Calendar(): React.JSX.Element {
         dayHeaderClass={getDayHeaderClass}
         dayHeaderInnerClass={getDayHeaderInnerClass}
         dayCellClass={getDayCellClass}
+        dayCellInnerClass={getDayCellInnerClass}
         dayCellTopClass={calendarFontClass}
         dayCellTopInnerClass={calendarDayTopClass}
         rowEventClass={calendarEventClasses}
