@@ -22,3 +22,4 @@ minimumReleaseAgeExclude:
   - '@astrojs/markdown-satteri@0.3.3'
   - '@astrojs/node@11.0.2'
   - '@astrojs/react@6.0.1'
+  - globals@17.8.0
