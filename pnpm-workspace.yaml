@@ -15,7 +15,7 @@ minimumReleaseAgeExclude:
   - '@typescript-eslint/visitor-keys@8.59.4 || 8.60.1'
   - astro@6.3.5 || 7.0.6
   - typescript-eslint@8.59.4 || 8.60.1
-  - '@types/react@19.2.16'
+  - '@types/react@19.2.16 || 19.2.18'
   - react-dom@19.2.7
   - react@19.2.7
   - '@astrojs/internal-helpers@0.10.1'
@@ -23,3 +23,4 @@ minimumReleaseAgeExclude:
   - '@astrojs/node@11.0.2'
   - '@astrojs/react@6.0.1'
   - globals@17.8.0
+  - '@types/react-dom@19.2.4'
