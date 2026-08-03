@@ -15,7 +15,7 @@
     "@astrojs/react": "^6.0.2",
     "@fullcalendar/core": "^7.0.2",
     "@fullcalendar/react": "^7.0.2",
-    "temporal-polyfill": "^1.0.2",
+    "temporal-polyfill": "^1.0.3",
     "@tailwindcss/vite": "^4.3.3",
     "astro": "^7.1.6",
     "react": "^19.2.8",
@@ -27,15 +27,15 @@
     "@eslint/js": "^10.0.1",
     "@types/react": "^19.2.18",
     "@types/react-dom": "^19.2.4",
-    "@typescript-eslint/parser": "^8.65.0",
+    "@typescript-eslint/parser": "^8.66.0",
     "astro-eslint-parser": "^3.0.0",
     "eslint": "^10.8.0",
-    "eslint-plugin-astro": "^3.0.1",
-    "globals": "^17.8.0",
+    "eslint-plugin-astro": "^3.1.0",
+    "globals": "^17.9.0",
     "prettier": "^3.9.6",
     "prettier-plugin-astro": "^0.14.1",
     "sass-embedded": "^1.100.0",
-    "typescript-eslint": "^8.65.0"
+    "typescript-eslint": "^8.66.0"
   },
-  "packageManager": "pnpm@11.18.0"
+  "packageManager": "pnpm@11.20.0"
 }
