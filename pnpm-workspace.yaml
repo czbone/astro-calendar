@@ -13,17 +13,17 @@ minimumReleaseAgeExclude:
   - '@typescript-eslint/typescript-estree@8.59.4 || 8.60.1 || 8.66.0 || 8.67.0'
   - '@typescript-eslint/utils@8.59.4 || 8.60.1 || 8.66.0 || 8.67.0'
   - '@typescript-eslint/visitor-keys@8.59.4 || 8.60.1 || 8.66.0 || 8.67.0'
-  - astro@6.3.5 || 7.0.6 || 7.2.1 || 7.2.2
+  - astro@6.3.5 || 7.0.6 || 7.2.1 || 7.2.2 || 7.2.4
   - typescript-eslint@8.59.4 || 8.60.1 || 8.66.0 || 8.67.0
   - '@types/react@19.2.16 || 19.2.18'
   - react-dom@19.2.7
   - react@19.2.7
-  - '@astrojs/internal-helpers@0.10.1'
-  - '@astrojs/markdown-satteri@0.3.3'
-  - '@astrojs/node@11.0.2 || 11.1.1 || 11.1.2'
-  - '@astrojs/react@6.0.1'
+  - '@astrojs/internal-helpers@0.10.1 || 0.10.4'
+  - '@astrojs/markdown-satteri@0.3.3 || 0.3.7'
+  - '@astrojs/node@11.0.2 || 11.1.1 || 11.1.2 || 11.1.4'
+  - '@astrojs/react@6.0.1 || 6.0.4'
   - globals@17.8.0 || 17.10.0 || 17.11.0
-  - '@types/react-dom@19.2.4'
+  - '@types/react-dom@19.2.4 || 19.2.5'
   - temporal-polyfill@1.0.3 || 1.0.4
   - sass-embedded-all-unknown@1.102.0
   - sass-embedded-android-arm64@1.102.0
@@ -46,3 +46,14 @@ minimumReleaseAgeExclude:
   - sass-embedded@1.102.0
   - astro-eslint-parser@3.1.0
   - temporal-utils@1.0.2
+  - '@bruits/satteri-darwin-arm64@0.10.3'
+  - '@bruits/satteri-darwin-x64@0.10.3'
+  - '@bruits/satteri-linux-arm64-gnu@0.10.3'
+  - '@bruits/satteri-linux-arm64-musl@0.10.3'
+  - '@bruits/satteri-linux-x64-gnu@0.10.3'
+  - '@bruits/satteri-linux-x64-musl@0.10.3'
+  - '@bruits/satteri-wasm32-wasi@0.10.3'
+  - '@bruits/satteri-win32-arm64-msvc@0.10.3'
+  - '@bruits/satteri-win32-x64-msvc@0.10.3'
+  - satteri@0.10.3
+  - eslint@10.9.0
