@@ -3,23 +3,23 @@ allowBuilds:
   esbuild: true
   sharp: true
 minimumReleaseAgeExclude:
-  - '@typescript-eslint/eslint-plugin@8.59.4 || 8.60.1 || 8.66.0 || 8.67.0'
-  - '@typescript-eslint/parser@8.59.4 || 8.60.1 || 8.66.0 || 8.67.0'
-  - '@typescript-eslint/project-service@8.59.4 || 8.60.1 || 8.66.0 || 8.67.0'
-  - '@typescript-eslint/scope-manager@8.59.4 || 8.60.1 || 8.66.0 || 8.67.0'
-  - '@typescript-eslint/tsconfig-utils@8.59.4 || 8.60.1 || 8.66.0 || 8.67.0'
-  - '@typescript-eslint/type-utils@8.59.4 || 8.60.1 || 8.66.0 || 8.67.0'
-  - '@typescript-eslint/types@8.59.4 || 8.60.1 || 8.66.0 || 8.67.0'
-  - '@typescript-eslint/typescript-estree@8.59.4 || 8.60.1 || 8.66.0 || 8.67.0'
-  - '@typescript-eslint/utils@8.59.4 || 8.60.1 || 8.66.0 || 8.67.0'
-  - '@typescript-eslint/visitor-keys@8.59.4 || 8.60.1 || 8.66.0 || 8.67.0'
-  - astro@6.3.5 || 7.0.6 || 7.2.1 || 7.2.2 || 7.2.4
-  - typescript-eslint@8.59.4 || 8.60.1 || 8.66.0 || 8.67.0
+  - '@typescript-eslint/eslint-plugin@8.59.4 || 8.60.1 || 8.66.0 || 8.67.0 || 8.68.0'
+  - '@typescript-eslint/parser@8.59.4 || 8.60.1 || 8.66.0 || 8.67.0 || 8.68.0'
+  - '@typescript-eslint/project-service@8.59.4 || 8.60.1 || 8.66.0 || 8.67.0 || 8.68.0'
+  - '@typescript-eslint/scope-manager@8.59.4 || 8.60.1 || 8.66.0 || 8.67.0 || 8.68.0'
+  - '@typescript-eslint/tsconfig-utils@8.59.4 || 8.60.1 || 8.66.0 || 8.67.0 || 8.68.0'
+  - '@typescript-eslint/type-utils@8.59.4 || 8.60.1 || 8.66.0 || 8.67.0 || 8.68.0'
+  - '@typescript-eslint/types@8.59.4 || 8.60.1 || 8.66.0 || 8.67.0 || 8.68.0'
+  - '@typescript-eslint/typescript-estree@8.59.4 || 8.60.1 || 8.66.0 || 8.67.0 || 8.68.0'
+  - '@typescript-eslint/utils@8.59.4 || 8.60.1 || 8.66.0 || 8.67.0 || 8.68.0'
+  - '@typescript-eslint/visitor-keys@8.59.4 || 8.60.1 || 8.66.0 || 8.67.0 || 8.68.0'
+  - astro@6.3.5 || 7.0.6 || 7.2.1 || 7.2.2 || 7.2.4 || 7.2.6
+  - typescript-eslint@8.59.4 || 8.60.1 || 8.66.0 || 8.67.0 || 8.68.0
   - '@types/react@19.2.16 || 19.2.18'
   - react-dom@19.2.7
   - react@19.2.7
   - '@astrojs/internal-helpers@0.10.1 || 0.10.4'
-  - '@astrojs/markdown-satteri@0.3.3 || 0.3.7'
+  - '@astrojs/markdown-satteri@0.3.3 || 0.3.7 || 0.3.8'
   - '@astrojs/node@11.0.2 || 11.1.1 || 11.1.2 || 11.1.4'
   - '@astrojs/react@6.0.1 || 6.0.4'
   - globals@17.8.0 || 17.10.0 || 17.11.0
@@ -56,4 +56,4 @@ minimumReleaseAgeExclude:
   - '@bruits/satteri-win32-arm64-msvc@0.10.3'
   - '@bruits/satteri-win32-x64-msvc@0.10.3'
   - satteri@0.10.3
-  - eslint@10.9.0
+  - eslint@10.9.0 || 10.9.1
