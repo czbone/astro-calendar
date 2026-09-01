@@ -11,13 +11,13 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "@astrojs/node": "^11.1.4",
-    "@astrojs/react": "^6.0.4",
+    "@astrojs/node": "^11.1.5",
+    "@astrojs/react": "^6.0.5",
     "@fullcalendar/core": "^7.0.2",
     "@fullcalendar/react": "^7.0.2",
     "temporal-polyfill": "^1.0.4",
     "@tailwindcss/vite": "^4.3.3",
-    "astro": "^7.2.6",
+    "astro": "^7.2.10",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
     "tailwindcss": "^4.3.3",
@@ -27,7 +27,7 @@
     "@eslint/js": "^10.0.1",
     "@types/react": "^19.2.18",
     "@types/react-dom": "^19.2.5",
-    "@typescript-eslint/parser": "^8.68.0",
+    "@typescript-eslint/parser": "^8.69.0",
     "astro-eslint-parser": "^3.1.0",
     "eslint": "^10.9.1",
     "eslint-plugin-astro": "^3.1.0",
@@ -35,7 +35,7 @@
     "prettier": "^3.9.6",
     "prettier-plugin-astro": "^0.14.1",
     "sass-embedded": "^1.103.1",
-    "typescript-eslint": "^8.68.0"
+    "typescript-eslint": "^8.69.0"
   },
-  "packageManager": "pnpm@11.23.0"
+  "packageManager": "pnpm@11.25.0"
 }
