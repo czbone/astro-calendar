@@ -3,47 +3,47 @@ allowBuilds:
   esbuild: true
   sharp: true
 minimumReleaseAgeExclude:
-  - '@typescript-eslint/eslint-plugin@8.59.4 || 8.60.1 || 8.66.0 || 8.67.0 || 8.68.0 || 8.69.0'
-  - '@typescript-eslint/parser@8.59.4 || 8.60.1 || 8.66.0 || 8.67.0 || 8.68.0 || 8.69.0'
-  - '@typescript-eslint/project-service@8.59.4 || 8.60.1 || 8.66.0 || 8.67.0 || 8.68.0 || 8.69.0'
-  - '@typescript-eslint/scope-manager@8.59.4 || 8.60.1 || 8.66.0 || 8.67.0 || 8.68.0 || 8.69.0'
-  - '@typescript-eslint/tsconfig-utils@8.59.4 || 8.60.1 || 8.66.0 || 8.67.0 || 8.68.0 || 8.69.0'
-  - '@typescript-eslint/type-utils@8.59.4 || 8.60.1 || 8.66.0 || 8.67.0 || 8.68.0 || 8.69.0'
-  - '@typescript-eslint/types@8.59.4 || 8.60.1 || 8.66.0 || 8.67.0 || 8.68.0 || 8.69.0'
-  - '@typescript-eslint/typescript-estree@8.59.4 || 8.60.1 || 8.66.0 || 8.67.0 || 8.68.0 || 8.69.0'
-  - '@typescript-eslint/utils@8.59.4 || 8.60.1 || 8.66.0 || 8.67.0 || 8.68.0 || 8.69.0'
-  - '@typescript-eslint/visitor-keys@8.59.4 || 8.60.1 || 8.66.0 || 8.67.0 || 8.68.0 || 8.69.0'
-  - astro@6.3.5 || 7.0.6 || 7.2.1 || 7.2.2 || 7.2.4 || 7.2.6 || 7.2.8 || 7.2.10
-  - typescript-eslint@8.59.4 || 8.60.1 || 8.66.0 || 8.67.0 || 8.68.0 || 8.69.0
+  - '@typescript-eslint/eslint-plugin@8.59.4 || 8.60.1 || 8.66.0 || 8.67.0 || 8.68.0 || 8.69.0 || 8.70.0'
+  - '@typescript-eslint/parser@8.59.4 || 8.60.1 || 8.66.0 || 8.67.0 || 8.68.0 || 8.69.0 || 8.70.0'
+  - '@typescript-eslint/project-service@8.59.4 || 8.60.1 || 8.66.0 || 8.67.0 || 8.68.0 || 8.69.0 || 8.70.0'
+  - '@typescript-eslint/scope-manager@8.59.4 || 8.60.1 || 8.66.0 || 8.67.0 || 8.68.0 || 8.69.0 || 8.70.0'
+  - '@typescript-eslint/tsconfig-utils@8.59.4 || 8.60.1 || 8.66.0 || 8.67.0 || 8.68.0 || 8.69.0 || 8.70.0'
+  - '@typescript-eslint/type-utils@8.59.4 || 8.60.1 || 8.66.0 || 8.67.0 || 8.68.0 || 8.69.0 || 8.70.0'
+  - '@typescript-eslint/types@8.59.4 || 8.60.1 || 8.66.0 || 8.67.0 || 8.68.0 || 8.69.0 || 8.70.0'
+  - '@typescript-eslint/typescript-estree@8.59.4 || 8.60.1 || 8.66.0 || 8.67.0 || 8.68.0 || 8.69.0 || 8.70.0'
+  - '@typescript-eslint/utils@8.59.4 || 8.60.1 || 8.66.0 || 8.67.0 || 8.68.0 || 8.69.0 || 8.70.0'
+  - '@typescript-eslint/visitor-keys@8.59.4 || 8.60.1 || 8.66.0 || 8.67.0 || 8.68.0 || 8.69.0 || 8.70.0'
+  - astro@6.3.5 || 7.0.6 || 7.2.1 || 7.2.2 || 7.2.4 || 7.2.6 || 7.2.8 || 7.2.10 || 7.3.1 || 7.3.2
+  - typescript-eslint@8.59.4 || 8.60.1 || 8.66.0 || 8.67.0 || 8.68.0 || 8.69.0 || 8.70.0
   - '@types/react@19.2.16 || 19.2.18'
   - react-dom@19.2.7
   - react@19.2.7
   - '@astrojs/internal-helpers@0.10.1 || 0.10.4 || 0.11.0'
-  - '@astrojs/markdown-satteri@0.3.3 || 0.3.7 || 0.3.8 || 0.4.0'
+  - '@astrojs/markdown-satteri@0.3.3 || 0.3.7 || 0.3.8 || 0.4.0 || 0.4.1'
   - '@astrojs/node@11.0.2 || 11.1.1 || 11.1.2 || 11.1.4 || 11.1.5'
   - '@astrojs/react@6.0.1 || 6.0.4 || 6.0.5'
   - globals@17.8.0 || 17.10.0 || 17.11.0
-  - '@types/react-dom@19.2.4 || 19.2.5'
+  - '@types/react-dom@19.2.4 || 19.2.5 || 19.2.7'
   - temporal-polyfill@1.0.3 || 1.0.4
-  - sass-embedded-all-unknown@1.102.0
-  - sass-embedded-android-arm64@1.102.0
-  - sass-embedded-android-arm@1.102.0
-  - sass-embedded-android-riscv64@1.102.0
-  - sass-embedded-android-x64@1.102.0
-  - sass-embedded-darwin-arm64@1.102.0
-  - sass-embedded-darwin-x64@1.102.0
-  - sass-embedded-linux-arm64@1.102.0
-  - sass-embedded-linux-arm@1.102.0
-  - sass-embedded-linux-musl-arm64@1.102.0
-  - sass-embedded-linux-musl-arm@1.102.0
-  - sass-embedded-linux-musl-riscv64@1.102.0
-  - sass-embedded-linux-musl-x64@1.102.0
-  - sass-embedded-linux-riscv64@1.102.0
-  - sass-embedded-linux-x64@1.102.0
-  - sass-embedded-unknown-all@1.102.0
-  - sass-embedded-win32-arm64@1.102.0
-  - sass-embedded-win32-x64@1.102.0
-  - sass-embedded@1.102.0
+  - sass-embedded-all-unknown@1.102.0 || 1.104.0
+  - sass-embedded-android-arm64@1.102.0 || 1.104.0
+  - sass-embedded-android-arm@1.102.0 || 1.104.0
+  - sass-embedded-android-riscv64@1.102.0 || 1.104.0
+  - sass-embedded-android-x64@1.102.0 || 1.104.0
+  - sass-embedded-darwin-arm64@1.102.0 || 1.104.0
+  - sass-embedded-darwin-x64@1.102.0 || 1.104.0
+  - sass-embedded-linux-arm64@1.102.0 || 1.104.0
+  - sass-embedded-linux-arm@1.102.0 || 1.104.0
+  - sass-embedded-linux-musl-arm64@1.102.0 || 1.104.0
+  - sass-embedded-linux-musl-arm@1.102.0 || 1.104.0
+  - sass-embedded-linux-musl-riscv64@1.102.0 || 1.104.0
+  - sass-embedded-linux-musl-x64@1.102.0 || 1.104.0
+  - sass-embedded-linux-riscv64@1.102.0 || 1.104.0
+  - sass-embedded-linux-x64@1.102.0 || 1.104.0
+  - sass-embedded-unknown-all@1.102.0 || 1.104.0
+  - sass-embedded-win32-arm64@1.102.0 || 1.104.0
+  - sass-embedded-win32-x64@1.102.0 || 1.104.0
+  - sass-embedded@1.102.0 || 1.104.0
   - astro-eslint-parser@3.1.0
   - temporal-utils@1.0.2
   - '@bruits/satteri-darwin-arm64@0.10.3'
@@ -56,7 +56,7 @@ minimumReleaseAgeExclude:
   - '@bruits/satteri-win32-arm64-msvc@0.10.3'
   - '@bruits/satteri-win32-x64-msvc@0.10.3'
   - satteri@0.10.3
-  - eslint@10.9.0 || 10.9.1
+  - eslint@10.9.0 || 10.9.1 || 10.10.0
   - '@img/sharp-darwin-arm64@0.35.4'
   - '@img/sharp-darwin-x64@0.35.4'
   - '@img/sharp-freebsd-wasm32@0.35.4'
@@ -84,3 +84,8 @@ minimumReleaseAgeExclude:
   - '@img/sharp-win32-ia32@0.35.4'
   - '@img/sharp-win32-x64@0.35.4'
   - sharp@0.35.4
+  - sass@1.104.0
+  - '@full-ui/headless-calendar@7.1.0'
+  - '@fullcalendar/core@7.1.0'
+  - '@fullcalendar/react@7.1.0'
+  - prettier-plugin-astro@1.0.0
