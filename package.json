@@ -11,12 +11,12 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "@astrojs/node": "^11.1.5",
-    "@astrojs/react": "^6.0.5",
+    "@astrojs/node": "^11.1.6",
+    "@astrojs/react": "^6.0.6",
     "@fullcalendar/core": "^7.1.0",
     "@fullcalendar/react": "^7.1.0",
     "@tailwindcss/vite": "^4.3.3",
-    "astro": "^7.3.2",
+    "astro": "^7.3.3",
     "react": "^19.3.0",
     "react-dom": "^19.3.0",
     "tailwindcss": "^4.3.3",
@@ -27,15 +27,15 @@
     "@eslint/js": "^10.0.1",
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
-    "@typescript-eslint/parser": "^8.70.0",
+    "@typescript-eslint/parser": "^8.70.1",
     "astro-eslint-parser": "^3.1.0",
-    "eslint": "^10.10.0",
-    "eslint-plugin-astro": "^3.1.0",
+    "eslint": "^10.11.0",
+    "eslint-plugin-astro": "^3.2.1",
     "globals": "^17.12.0",
-    "prettier": "^3.9.6",
-    "prettier-plugin-astro": "^1.0.0",
-    "sass-embedded": "^1.104.0",
-    "typescript-eslint": "^8.70.0"
+    "prettier": "^3.9.8",
+    "prettier-plugin-astro": "^1.0.1",
+    "sass-embedded": "^1.104.1",
+    "typescript-eslint": "^8.70.1"
   },
-  "packageManager": "pnpm@12.4.1"
+  "packageManager": "pnpm@12.5.1"
 }
