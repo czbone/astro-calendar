@@ -2,47 +2,14 @@ allowBuilds:
   '@parcel/watcher': true
   esbuild: true
 minimumReleaseAgeExclude:
-  - '@types/react-dom@19.3.0'
-  - '@types/react@19.3.0'
-  - react-dom@19.3.0
-  - react@19.3.0
-  - scheduler@0.28.0
-  - temporal-polyfill@1.0.5
-  - temporal-utils@1.0.3
-  - eslint-plugin-astro@3.2.0
-  - prettier@3.9.7 || 3.9.8 || 3.9.9
-  - '@astrojs/node@11.1.6'
-  - '@astrojs/react@6.0.6 || 7.0.0'
-  - astro@7.3.3 || 7.3.4
-  - '@typescript-eslint/eslint-plugin@8.70.1'
-  - '@typescript-eslint/parser@8.70.1'
-  - '@typescript-eslint/project-service@8.70.1'
-  - '@typescript-eslint/scope-manager@8.70.1'
-  - '@typescript-eslint/tsconfig-utils@8.70.1'
-  - '@typescript-eslint/type-utils@8.70.1'
-  - '@typescript-eslint/types@8.70.1'
-  - '@typescript-eslint/typescript-estree@8.70.1'
-  - '@typescript-eslint/utils@8.70.1'
-  - '@typescript-eslint/visitor-keys@8.70.1'
-  - typescript-eslint@8.70.1
-  - '@astrojs/markdown-satteri@0.4.2'
-  - sass-embedded-all-unknown@1.105.0
-  - sass-embedded-android-arm64@1.105.0
-  - sass-embedded-android-arm@1.105.0
-  - sass-embedded-android-riscv64@1.105.0
-  - sass-embedded-android-x64@1.105.0
-  - sass-embedded-darwin-arm64@1.105.0
-  - sass-embedded-darwin-x64@1.105.0
-  - sass-embedded-linux-arm64@1.105.0
-  - sass-embedded-linux-arm@1.105.0
-  - sass-embedded-linux-musl-arm64@1.105.0
-  - sass-embedded-linux-musl-arm@1.105.0
-  - sass-embedded-linux-musl-riscv64@1.105.0
-  - sass-embedded-linux-musl-x64@1.105.0
-  - sass-embedded-linux-riscv64@1.105.0
-  - sass-embedded-linux-x64@1.105.0
-  - sass-embedded-unknown-all@1.105.0
-  - sass-embedded-win32-arm64@1.105.0
-  - sass-embedded-win32-x64@1.105.0
-  - sass-embedded@1.105.0
-  - sass@1.105.0
+  - '@typescript-eslint/eslint-plugin@8.71.0'
+  - '@typescript-eslint/parser@8.71.0'
+  - '@typescript-eslint/project-service@8.71.0'
+  - '@typescript-eslint/scope-manager@8.71.0'
+  - '@typescript-eslint/tsconfig-utils@8.71.0'
+  - '@typescript-eslint/type-utils@8.71.0'
+  - '@typescript-eslint/types@8.71.0'
+  - '@typescript-eslint/typescript-estree@8.71.0'
+  - '@typescript-eslint/utils@8.71.0'
+  - '@typescript-eslint/visitor-keys@8.71.0'
+  - typescript-eslint@8.71.0
