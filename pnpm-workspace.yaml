@@ -15,9 +15,9 @@ minimumReleaseAgeExclude:
   - typescript-eslint@8.71.0 || 8.71.1 || 8.71.2 || 8.72.0
   - globals@17.13.0
   - eslint@10.12.0
-  - '@full-ui/headless-calendar@7.1.1 || 7.1.2 || 7.1.3'
-  - '@fullcalendar/core@7.1.1 || 7.1.2 || 7.1.3'
-  - '@fullcalendar/react@7.1.1 || 7.1.2 || 7.1.3'
+  - '@full-ui/headless-calendar@7.1.1 || 7.1.2 || 7.1.3 || 7.1.4'
+  - '@fullcalendar/core@7.1.1 || 7.1.2 || 7.1.3 || 7.1.4'
+  - '@fullcalendar/react@7.1.1 || 7.1.2 || 7.1.3 || 7.1.4'
   - '@astrojs/internal-helpers@0.12.0 || 0.13.0'
   - '@astrojs/markdown-satteri@0.4.3 || 0.4.4 || 0.4.6'
   - '@astrojs/node@11.1.7 || 11.1.8 || 11.1.9'
@@ -48,3 +48,5 @@ minimumReleaseAgeExclude:
   - sass-embedded-win32-x64@1.105.2 || 1.107.0
   - sass-embedded@1.105.2 || 1.107.0
   - sass@1.105.2 || 1.107.0
+  - temporal-polyfill@1.0.7
+  - temporal-utils@1.0.4
