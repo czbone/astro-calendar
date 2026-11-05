@@ -18,11 +18,11 @@ minimumReleaseAgeExclude:
   - '@full-ui/headless-calendar@7.1.1 || 7.1.2 || 7.1.3 || 7.1.4'
   - '@fullcalendar/core@7.1.1 || 7.1.2 || 7.1.3 || 7.1.4'
   - '@fullcalendar/react@7.1.1 || 7.1.2 || 7.1.3 || 7.1.4'
-  - '@astrojs/internal-helpers@0.12.0 || 0.13.0'
-  - '@astrojs/markdown-satteri@0.4.3 || 0.4.4 || 0.4.6'
-  - '@astrojs/node@11.1.7 || 11.1.8 || 11.1.9'
-  - '@astrojs/react@7.0.1 || 7.1.0 || 7.1.2'
-  - astro@7.3.6 || 7.3.8 || 7.4.0 || 7.4.1 || 7.4.4
+  - '@astrojs/internal-helpers@0.12.0 || 0.13.0 || 0.13.1'
+  - '@astrojs/markdown-satteri@0.4.3 || 0.4.4 || 0.4.6 || 0.4.7'
+  - '@astrojs/node@11.1.7 || 11.1.8 || 11.1.9 || 11.1.11'
+  - '@astrojs/react@7.0.1 || 7.1.0 || 7.1.2 || 7.1.4'
+  - astro@7.3.6 || 7.3.8 || 7.4.0 || 7.4.1 || 7.4.4 || 7.4.7
   - prettier@3.9.10
   - '@astrojs/prism@4.1.0 || 4.1.2'
   - '@astrojs/telemetry@3.4.0 || 3.4.2'
