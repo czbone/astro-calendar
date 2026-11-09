@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import FullCalendar from '@fullcalendar/react'
+import FullCalendar, { joinClassNames } from '@fullcalendar/react'
 import type { DayCellInfo, EventInput } from '@fullcalendar/react'
 import dayGridPlugin from '@fullcalendar/react/daygrid'
 import jaLocale from '@fullcalendar/react/locales/ja'
@@ -24,12 +24,8 @@ const calendarPopoverHeaderClass = 'calendar-popover-header'
 const calendarPopoverTitleClass = 'calendar-popover-title'
 const holidayTextClass = 'holiday-text'
 
-function joinClasses(...classes: Array<string | false | undefined>): string {
-  return classes.filter(Boolean).join(' ')
-}
-
-const calendarEventClasses = joinClasses(calendarEventFontClass, calendarEventClass)
-const calendarEventInnerClasses = joinClasses(calendarEventFontClass, calendarEventInnerClass)
+const calendarEventClasses = joinClassNames(calendarEventFontClass, calendarEventClass)
+const calendarEventInnerClasses = joinClassNames(calendarEventFontClass, calendarEventInnerClass)
 
 function getWeekendClass(date: Date): string {
   const day = date.getDay()
@@ -40,14 +36,14 @@ function getWeekendClass(date: Date): string {
 
 function getDayHeaderInnerClass(info: { date: Date; inPopover: boolean }): string {
   if (info.inPopover) {
-    return joinClasses(calendarFontClass, calendarPopoverTitleClass)
+    return joinClassNames(calendarFontClass, calendarPopoverTitleClass)
   }
-  return joinClasses(calendarFontClass, calendarDayHeaderClass, getWeekendClass(info.date))
+  return joinClassNames(calendarFontClass, calendarDayHeaderClass, getWeekendClass(info.date))
 }
 
 function getDayHeaderClass(info: { inPopover: boolean }): string {
   return info.inPopover
-    ? joinClasses(calendarFontClass, calendarPopoverHeaderClass)
+    ? joinClassNames(calendarFontClass, calendarPopoverHeaderClass)
     : calendarFontClass
 }
 
@@ -107,7 +103,7 @@ export default function Calendar(): React.JSX.Element {
       <>
         <span
           className={
-            isHoliday ? holidayTextClass : joinClasses(calendarFontClass, weekendClass)
+            isHoliday ? holidayTextClass : joinClassNames(calendarFontClass, weekendClass)
           }
         >
           {info.date.getDate()}
@@ -133,16 +129,12 @@ export default function Calendar(): React.JSX.Element {
         dayCellInnerClass={getDayCellInnerClass}
         dayCellTopClass={calendarFontClass}
         dayCellTopInnerClass={calendarDayTopClass}
-        rowEventClass={calendarEventClasses}
-        rowEventInnerClass={calendarEventInnerClasses}
-        rowEventTimeClass={calendarEventFontClass}
-        rowEventTitleClass={calendarEventFontClass}
-        rowMoreLinkClass={calendarEventFontClass}
-        rowMoreLinkInnerClass={calendarEventFontClass}
-        listItemEventClass={calendarEventClasses}
-        listItemEventInnerClass={calendarEventInnerClasses}
-        listItemEventTimeClass={calendarEventFontClass}
-        listItemEventTitleClass={calendarEventFontClass}
+        eventClass={calendarEventClasses}
+        eventInnerClass={calendarEventInnerClasses}
+        eventTimeClass={calendarEventFontClass}
+        eventTitleClass={calendarEventFontClass}
+        moreLinkClass={calendarEventFontClass}
+        moreLinkInnerClass={calendarEventFontClass}
         listItemEventBeforeClass={calendarListEventDotHiddenClass}
         initialView="dayGridMonth"
         dayMaxEvents={true} // 日付枠内に表示できるイベント数を制限
